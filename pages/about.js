@@ -35,8 +35,8 @@ export default function Home({ locale }) {
             GAMA Healthcare est une entreprise dynamique et innovante à la
             pointe de la technologie de prévention des infections. Nous sommes
             spécialisés dans la fabrication et la distribution de produits IPC
-            révolutionnaires et dans la fourniture d'un service après-vente
-            exceptionnel.
+            révolutionnaires et dans la fourniture d&lsquo;un service
+            après-vente exceptionnel.
           </p>
         )}
 
