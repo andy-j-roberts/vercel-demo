@@ -16,35 +16,32 @@ export default function Home({ locale }) {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href='https://gamahealthcare.com'>GAMA Healthcare</a>
-        </h1>
+        <h1 className={styles.title}>About GAMA Healthcare</h1>
         <p className={styles.description}>
           Your current locale is {router.locale}
         </p>
-        <div>
-          {router.locale != 'en-GB' && (
-            <Link href='/' locale='en-GB'>
-              <a className={styles.button}>To UK site</a>
-            </Link>
-          )}
-          {router.locale != 'fr' && (
-            <Link href='/' locale='fr'>
-              <a className={styles.button}>To French site</a>
-            </Link>
-          )}
-        </div>
+
         {router.locale === 'en-GB' && (
-          <p className={styles.description}>This is the UK welcome message.</p>
+          <p className={styles.description}>
+            GAMA Healthcare is a dynamic, innovative company at the forefront of
+            infection prevention technology. We specialise in the manufacture
+            and distribution of revolutionary IPC products and the provision of
+            exceptional aftercare support.
+          </p>
         )}
 
         {router.locale === 'fr' && (
           <p className={styles.description}>
-            Ceci est le message de bienvenue en français.
+            GAMA Healthcare est une entreprise dynamique et innovante à la
+            pointe de la technologie de prévention des infections. Nous sommes
+            spécialisés dans la fabrication et la distribution de produits IPC
+            révolutionnaires et dans la fourniture d'un service après-vente
+            exceptionnel.
           </p>
         )}
-        <Link href='/about' passHref>
-          <a className={styles.button}>About</a>
+
+        <Link href='/' passHref>
+          <a className={styles.button}>Home</a>
         </Link>
       </main>
 

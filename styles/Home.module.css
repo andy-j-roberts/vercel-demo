@@ -54,6 +54,13 @@
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+  max-width: 50vw;
+}
+
+.button {
+  background: blue;
+  color: white;
+  padding: 1rem 3rem;
 }
 
 .code {
